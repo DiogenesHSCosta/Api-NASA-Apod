@@ -3,12 +3,23 @@ const dataInput = document.querySelector('#data')
 const fundo = document.querySelector("#fundo")
 
 //dia, ano e mes atual
-    let data = new Date();
-    let anoAtual = data.getFullYear()
-    let mesAtual = data.getMonth() + 1
-    let diaAtual = data.getDate()
+function padTo2Digits(num) {
+    return num.toString().padStart(2, '0');
+  }
+  
+  function formatDate(date) {
+    return [
+      date.getFullYear(),
+      padTo2Digits(date.getMonth() + 1),
+      padTo2Digits(date.getDate()),
+    ].join('-');
+  }
+  
 
-    dataInput.setAttribute("max", `${anoAtual}-${mesAtual}-${diaAtual}`)
+const Data = formatDate(new Date());
+  
+dataInput.setAttribute("max", `${Data}`)
+    // console.log(`${anoAtual}-${mesAtual}-${diaAtual}`)
 
 
 dataInput.addEventListener("change", async () =>{
