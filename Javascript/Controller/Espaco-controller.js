@@ -19,8 +19,6 @@ function padTo2Digits(num) {
 const Data = formatDate(new Date());
   
 dataInput.setAttribute("max", `${Data}`)
-    // console.log(`${anoAtual}-${mesAtual}-${diaAtual}`)
-
 
 dataInput.addEventListener("change", async () =>{
     console.log(dataInput.value)
