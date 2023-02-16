@@ -15,10 +15,10 @@ function padTo2Digits(num) {
     ].join('-');
   }
   
-
 const Data = formatDate(new Date());
-  
 dataInput.setAttribute("max", `${Data}`)
+
+
 
 dataInput.addEventListener("change", async () =>{
     console.log(dataInput.value)

@@ -5,4 +5,5 @@ class Espaco{
         this.descricao = espaco.explanation
         this.imagem = espaco.url
     }
+
 }
