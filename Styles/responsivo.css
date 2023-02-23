@@ -57,4 +57,23 @@
         border: 0 solid transparent;
         margin: 10px;
     }
+
+    
+}
+
+@media (max-width: 650px){
+
+    .titulo{
+        font-size: 22px;
+    
+    }
+    .texto{
+        font-size: 15px;
+    }
+    
+    .divisao{
+        width: 60%;
+        margin: 10px
+        
+    }
 }
