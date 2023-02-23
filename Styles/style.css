@@ -1,12 +1,17 @@
-main{
-    width: 100%;
+html{
     height: 100%;
+}
+body{
+    min-height: 100%;
+}
+main{
+    height: 100vh;
     display: flex;
     background-color: rgb(31, 31, 31);
     justify-content: center;
 }
 #fundo{
-    background-position: center;
+    background-position:bottom;
     width: 100%;
 
 }
@@ -20,12 +25,10 @@ main{
 
 }
 #descricao{
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    height: 100%;
-    width: 100%;
 
     position: fixed;
     top: 0%;
@@ -55,7 +58,7 @@ main{
     border: 0 solid transparent;
     margin: 10px;
 }
-figure{
+.icon{
     height: 100%;
     margin: 10px;
     width: 25%;
