@@ -1,7 +1,19 @@
-
-
-@media (max-width: 768px) {
+@media (max-width: 988px) {
+    main{
+        height: 100vh;
+        display: flex;
+        background-color: rgb(31, 31, 31);
+        justify-content: center;
+    }
+}
+@media (max-width: 852px) {
     
+    main{
+        height: 100vh;
+        display: flex;
+        background-color: rgb(31, 31, 31);
+        justify-content: center;
+    }
 
     #fundo{
         background-position: center;
